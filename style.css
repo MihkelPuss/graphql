@@ -1,0 +1,117 @@
+body {
+    font-family: "Lucida Console", Courier, monospace;
+    background: linear-gradient(135deg, #ffffff, #00eeff);
+    background-attachment: fixed;
+}
+
+.loginDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.loginDiv:hover {
+    opacity: 1;
+}
+
+.loginDiv h2 {
+    margin: 5%;
+    text-align: center;
+}
+
+.input-container {
+    text-align: center;
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: 700;
+}
+
+.email {
+    margin-bottom: 5%;
+}
+
+.button {
+    text-align: center;
+    position: relative;
+    left: 40%;
+    width: 20%;
+    border: 1px solid;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    background: white;
+    margin-bottom: 2%;
+}
+
+.button:hover {
+    background: #00eeff;
+}
+
+.input-container label {
+    text-align: center;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.userData {
+    content: '';
+    display: block;
+    clear: both; /* to clear out the floating */
+}
+
+.userInfo {
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 1%;
+    padding-bottom: 0px;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+    margin: 1% 35%;
+}
+
+.xpGained {
+    width: fit-content;
+    float: left;
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 0% 1% 0% 1%;
+    margin: 1%;
+    text-align: center;
+}
+
+.skills {
+    width: fit-content;
+    float: left;
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 0% 1% 0% 1%;
+    margin: 1%;
+    text-align: center;
+}
+
+.tooltip {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 0.5%;
+    border-radius: 3px;
+    display: none;
+    pointer-events: none;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+
+svg {
+    overflow: visible;
+}

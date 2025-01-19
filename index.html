@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01edu with GraphQL</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="loginDiv" class="loginDiv">
+        <h2>Log in with kood/Johvi credentials</h2>
+        <div class="input-container">
+            <label for="email">E-mail</label><br>
+            <input type="text" id="email" class="email" name="email" placeholder="Write your e-mail here..." required /><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Write your password here..." required/><br>
+        </div><br>
+        <button class="button" type="button" id="loginButton">Log in</button>
+    </div>
+    <div id="userData" class="userData" style="display:none;">
+        <div id="userInfo" class=" userInfo">
+            <h4>Basic user identification</h4>
+            <div id="identification"></div>
+            <button type="button" id="logoutButton" class="button">Log out</button>
+        </div>
+        <div id="xpGained" class="xpGained">
+            <h4>Total progress (hover on task to see details)</h4>
+            <div id="graph-container"></div>
+            <div class="tooltip" id="tooltip1"></div>
+        </div>
+        <div if="skills" class="skills">
+            <h4>All skills and points (hover on column to see details)</h4>
+            <div id="bar-graph-container"></div>
+            <div class="tooltip" id="tooltip2"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</body>
+</html>
